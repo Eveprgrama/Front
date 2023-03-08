@@ -1,0 +1,46 @@
+<i class="fa-solid fa-plus" type="button" data-bs-toggle="modal" data-bs-target="#modalnuevo7" *ngIf="isLogged"></i> 
+<!--Modal crear nuevo-->
+<div class="modal" id="modalnuevo7" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Nuevo Trabajo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="limpiar()"></button>
+        </div>
+        <form [formGroup]="form" (ngSubmit)="submitData()" novalidate #f="ngForm" name="experienciaForm">
+        <div class="modal-body">
+              <div class="mb-3">
+                <label for="imagen" class="form-label">Imagen</label>
+                <input class="form-control form-control-sm" id="imagen" formControlName="imagen" type="text" [(ngModel)]="imagen">
+              </div>
+              <div class="mb-3">
+                <div class="mb-3">
+                  <label for="pagina" class="form-label">Nombre de la Página</label>
+                  <input class="form-control form-control-sm" id="pagina" formControlName="pagina" type="text" [(ngModel)]="pagina">
+                </div>
+              </div>  
+              <div class="mb-3">
+                <div class="form group">
+                <label for="categoria" class="form-label">Categoria</label>
+                <input class="form-control form-control-sm" id="categoria" formControlName="categoria" type="text" [(ngModel)]="categoria">
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="form group">
+              <label for="fecha" class="form-label">Fecha de creación</label>
+              <input class="form-control form-control-sm" id="fecha" formControlName="fecha" type="text" [(ngModel)]="fecha">
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="form group">
+            <label for="url" class="form-label">Url de la Página</label>
+            <input class="form-control form-control-sm" id="url" formControlName="url" type="text" [(ngModel)]="url">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-light" (click)="limpiar()">Limpiar</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+        </div>
+        </form>

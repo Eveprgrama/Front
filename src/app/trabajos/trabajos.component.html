@@ -1,0 +1,53 @@
+<!-- ======= Portfolio Section ======= -->
+<section id="work" class="portfolio-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Mis Trabajos
+            </h3> <app-nuevotrabajo></app-nuevotrabajo>
+            <p class="subtitle-a">
+              ¡Conoceme un poco más apartir de mis trabajos realizados!.
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div *ngFor="let trabajo of worklist" class="col-md-4">
+          <div class="work-box">
+            <a [href]="trabajo.imagen" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <div class="work-img">
+                <img [src]="trabajo.imagen" alt="" class="img-fluid">
+              </div>
+            </a>
+            <div class="work-content">
+              <div class="row">
+                <div class="col-sm-8">
+                  <h2 class="w-title">{{trabajo.pagina}}</h2>
+                  <div class="w-more">
+                    <span class="w-ctegory">{{trabajo.categoria}}</span> / <span class="w-date">{{trabajo.fecha}}</span>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="w-like">
+                    <a [href]="trabajo.url"> <span class="bi bi-plus-circle"></span></a>
+                  </div>
+                  <td routerLinkActive="active">
+                    <i class="fa-solid fa-pencil" type="button" *ngIf="isLogged" routerLink="/edittrabajos/{{trabajo.id}}"></i> <br> <i class="fa-regular fa-trash-can"  type="button" *ngIf="isLogged" (click)="delete(trabajo.id)"></i></td>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Portfolio Section -->
+  <br>
+  <br>
+  <br>
+  <br>
+  

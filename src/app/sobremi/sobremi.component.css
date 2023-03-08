@@ -1,0 +1,15 @@
+ /* About Section*/
+ 
+ #about-section {
+    position: relative;
+}
+
+.blockabout {
+    padding: 20px;
+    background: transparent;
+}
+
+.blockabout-inner {
+    padding: 30px;
+    border: 1px solid #fc4984;
+}

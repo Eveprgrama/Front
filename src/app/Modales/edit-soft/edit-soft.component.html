@@ -1,0 +1,27 @@
+<div class="container" *ngIf="softskills">
+  <div class="row">
+        <form  (ngSubmit)="onUpdate()" novalidate #f="ngForm" [formGroup]="form">
+          <div class="mb-3">
+            <div class="form group">
+              <label for="habilidad" class="form-label">Nombre de la Habilidad</label>
+              <input class="form-control form-control-sm" id="habilidad" type="text" formControlName="habilidad" [(ngModel)]="softskills.habilidad">
+          </div>
+        </div>
+            <div class="mb-3">
+              <div class="form group">
+              <label for="imagen" class="form-label">Url de la imagen</label>
+              <input class="form-control form-control-sm" id="imagen" formControlName="imagen" type="text" [(ngModel)]="softskills.imagen">
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="form group">
+            <label for="descripcion" class="form-label">Descripcion</label>
+            <input class="form-control form-control-sm" id="descripcion" formControlName="descripcion" type="text" [(ngModel)]="softskills.descripcion">
+          </div>
+        </div>
+        <button type="button" class="btn btn-secondary" (click)="volver($event)" >Cerrar</button>
+        <button type="submit" class="btn btn-primary" (click)="onEnviar($event)" >Actualizar</button>
+    </form>
+  </div>
+  </div>
+    

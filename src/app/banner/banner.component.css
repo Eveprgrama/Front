@@ -1,0 +1,24 @@
+#hero {
+    width: 100%;
+    height: 100%;
+    margin-top: 0%;
+  }
+  .container.d-flex.flex-column.align-items-center {
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-bottom: 40%;
+  }
+
+  .btn.btn-secondary.btn-lg.rounded-2 {
+    border: #5a656e ;
+    margin-top: 1%;
+    background-color: #fdc9d7;
+    color: #414141;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    border-radius: 2%;
+    }
+
+    #editbanner {
+      padding-top: 2%;
+    }

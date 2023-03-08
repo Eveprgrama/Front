@@ -1,0 +1,27 @@
+.d-flex{
+    color: #888888;
+    justify-content: space-between;
+    margin-top: 2ch;
+}
+
+
+.fa-brands.fa-instagram.fa-xl.p-2:hover {
+    color:  #34b7a7;
+}
+.fa-brands.fa-linkedin-in.fa-xl.p-2:hover  {
+    color:  #34b7a7;
+}
+.fa-brands.fa-github.fa-xl.p-2:hover {
+    color:  #34b7a7;
+}
+.fa-solid.fa-user.fa-xl.p-2:hover {
+    color:  #34b7a7;
+}
+.fa-solid.fa-lock-open.fa-xl.p-2:hover {
+  color: #34b7a7;
+}
+
+.btn-danger {
+    background-color:#888888 !important;
+    border-color: black !important;   
+}

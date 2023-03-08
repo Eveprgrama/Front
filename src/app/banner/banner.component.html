@@ -1,0 +1,15 @@
+<!--  Banner Section -->
+<section id="hero" *ngFor="let personas of persona" >
+  <div  class="d-flex align-items-center" [style.backgroundImage]="'url(' + personas.img + ')'" [style.backgroundSize]="'cover'">
+    <div class="container d-flex flex-column align-items-center">
+      <h1> {{personas.nombre}} {{personas.apellido}} </h1>
+      <h2>{{personas.titulo}}</h2>
+      <button type="button" class="btn btn-secondary btn-lg rounded-2"> <a (click)="scrollToElement('#footer')"> Contactame! </a> </button>
+      <br>
+      <td routerLinkActive="active">
+        <i class="fa-solid fa-pencil" type="button" *ngIf="isLogged" routerLink="/editbanner/{{personas.id}}"></i></td>
+    </div>
+  </div>
+  </section>
+  <!-- End Banner -->
+<!--'url('+img+')'-->

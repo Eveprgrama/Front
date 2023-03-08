@@ -1,0 +1,22 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #e9ebea !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif !important;
+  color: #5a656e;
+}
+
+.container {
+    margin-top: 2%
+}
+
+a {
+    color: #888888;
+}

@@ -1,0 +1,37 @@
+<div class="col-md-12" *ngIf="!isLogged">
+  <div class="card card-container">
+    <img
+      id="profile-img"
+      src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
+      class="profile-img-card" />
+          <form  [formGroup]="form" #f="ngForm" (ngSubmit)="onLogin()" novalidate>  
+          <div class="form-group">
+            <label for="nombreUsuario" class="col-sm-2 col-form-label">User</label>
+              <input type="text" class="form-control" id="email"  formControlName="nombreUsuario" [(ngModel)]="nombreUsuario" name="nombreUsuario" required />
+            </div>
+          <div class="from-group">
+            <label for="password" class="col-sm-4 col-form-label">Contraseña</label>
+              <input type="password" class="form-control" id="password"  formControlName="password" [class.border-danger]="PasswordValid" [(ngModel)]="password" name="password" required />
+            
+             <!-- Gracias al getter que configuramos en el controlador -->
+    <div *ngIf="Password?.errors  && Password?.touched">
+      <p *ngIf="Password?.hasError('required')" class="error">
+        La contraseña es requerida
+      </p>
+      <p *ngIf="Password?.errors?.['minlength']"
+       class="error">
+       La contraseña debe ser de 4 o más caracteres.
+      </p>
+    </div>
+        </div>
+        <br>
+        <div class="form-group">
+          <button id="submit" type="submit" class="btn btn-danger"> Iniciar Sesión </button>
+        </div>
+      </form>
+      <div>
+        <p class="mb-0">No tienes una cuenta? <a href="/registro" class="text-pink-50 fw-bold">Registrate!</a>
+        </p>
+      </div>
+    </div>
+  </div>

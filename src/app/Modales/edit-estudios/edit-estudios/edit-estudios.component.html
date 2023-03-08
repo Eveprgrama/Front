@@ -1,0 +1,44 @@
+<div class="container" *ngIf="estudio">
+  <div class="row">
+        <form  (ngSubmit)="onUpdate()" novalidate #f="ngForm" [formGroup]="form">
+          <div class="mb-3">
+            <div class="form group">
+              <label for="img" class="form-label">Logo</label>
+              <input class="form-control form-control-sm" id="img" type="text" formControlName="img" [(ngModel)]="estudio.img">
+          </div>
+        </div>
+            <div class="mb-3">
+              <div class="form group">
+              <label for="instituto" class="form-label">Nombre del Instituto</label>
+              <input class="form-control form-control-sm" id="instituto" formControlName="instituto" type="text" [(ngModel)]="estudio.instituto">
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="form group">
+              <label for="inicio" class="form-label">Especializacion</label>
+              <input class="form-control form-control-sm" id="especializacion" formControlName="especializacion" type="text" [(ngModel)]="estudio.especializacion">
+            </div>
+          </div>
+            <div class="mb-3">
+              <div class="form group">
+                <label for="inicio" class="form-label">Año de inicio</label>
+                <input class="form-control form-control-sm" id="inicio" formControlName="inicio" type="text" [(ngModel)]="estudio.inicio">
+              </div>
+            </div>
+              <div class="mb-3">
+                <div class="form group">
+                <label for="fin" class="form-label">Año de fin</label>
+                <input class="form-control form-control-sm" id="fin" formControlName="fin" type="text" [(ngModel)]="estudio.fin">
+              </div>
+            </div>
+                <div class="mb-3">
+                  <div class="form group">
+                  <label for="descripcion" class="form-label">Descripción</label>
+                  <textarea class="form-control" id="descripcion" formControlName="descripcion" rows="3" [(ngModel)]="estudio.descripcion"></textarea>
+                </div>
+              </div>    
+        <button type="button" class="btn btn-secondary" (click)="volver($event)" >Cerrar</button>
+        <button type="submit" class="btn btn-primary" (click)="onEnviar($event)" >Actualizar</button>
+    </form>
+  </div>
+  </div>

@@ -1,0 +1,23 @@
+<div class="container" *ngIf="smedit">
+  <div class="row">
+        <form  (ngSubmit)="onUpdate()" novalidate #f="ngForm" [formGroup]="form">
+          <div class="mb-3">
+            <div class="form group">
+              <label for="imagen" class="form-label">Foto Perfil</label>
+              <input class="form-control form-control-sm" id="imagen" type="text" formControlName="imagen" name="imagen" [(ngModel)]="smedit.imagen">
+          </div>
+        </div>
+            <div class="mb-3">
+              <div class="form group">
+              <label for="texto" class="form-label">Descripción</label>
+              <textarea class="form-control form-control-sm" id="texto" formControlName="texto" type="text" name="texto" [(ngModel)]="smedit.texto"></textarea>
+            </div>
+          </div>
+        <button type="button" class="btn btn-secondary" (click)="volver($event)" >Cerrar</button>
+        <button type="submit" class="btn btn-primary" (click)="onEnviar($event)" >Actualizar</button>
+    </form>
+  </div>
+  </div>
+    
+   
+

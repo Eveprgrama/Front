@@ -1,0 +1,200 @@
+{
+    "nombre": "Evelyn",
+    "apellido": "Penfold",
+
+    "banner": {
+    "titulo": "Full Stack Web Developer",
+    "img": "assets/img/banner.jpg",
+    "size": "cover"
+},
+
+"sobremi": {
+    "texto1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quas optio reiciendis deleniti voluptatem facere sequi, quia, est sed dicta aliquid quidem facilis culpa iure perferendis? Dolor ad quia deserunt.",
+    "texto2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quas optio reiciendis deleniti voluptatem facere.",
+    "imagen": "assets/img/IMG_5413.JPG"
+},
+
+    "educacion": [ 
+        {
+        "id": 0,
+        "inicio": "2006",
+        "fin": "2012",
+        "instituto": "Escuela Normal Superior José Figueroa Alcorta",
+        "especializacion": "Escuela secundaria con especialización en ciencias sociales",
+        "descripcion": "Escuela secundaria, Bell Ville, Cba.",
+        "img": "assets/img/escuelanormal.png"
+        },
+        {
+        "id": 1,
+        "inicio": "2014",
+        "fin": "2017",
+        "instituto": "Azafrán: Escuela de Gastronomía",
+        "especializacion": "Tecnicatura superior en gastronomía",
+        "descripcion": "La Tecnicatura Superior en Gastronomía ofrece una formación de alta capacitación interdisciplinaria, brindando las herramientas y técnicas necesarias a través de programas, contenidos y dinámicas diseñados para que el alumno pueda adquirir los conocimientos y destrezas de forma idónea. De esta manera, el alumno se familiariza con contenidos de bromatología, nutrición, diseño de menús, enología, servicio, organización de eventos, administración, gestión, costos, diseño y equipamiento de cocinas, además de los contenidos propiamente culinarios.",
+        "img": "assets/img/azafran.png"
+         },
+         {
+        "id": 2,    
+        "inicio": "2022",
+        "fin": "2022",
+        "instituto": "Argentina Programa",
+        "especializacion": "Primera Etapa: Sé Programar",
+        "descripcion": "Programa de formación de Full stack web developers jr",
+        "img": "assets/img/argentinaprograma.png"
+
+         },
+         {
+        "id": 3,    
+        "inicio": "2022",
+        "fin": "2023",
+        "instituto": "Argentina Programa",
+        "especializacion": "Segunda Etapa: Yo Programo",
+        "descripcion": "Programa de formación de Full stack web developers jr",
+        "img": "assets/img/argentinaprograma.png" 
+         }
+        ],
+
+         "trabajo": [ 
+     {
+        "id": 4, 
+        "nombre": "Azafrán: Escuela de Gastronomía",   
+        "inicio": "2014",
+        "fin": "2017",
+        "Localidad": "Córdoba, Argentina.",
+        "tag1": "Ayudante de Cocina.",
+        "tag2": "Prácticas de formación culinaria",
+        "img": "assets/img/azafran.png" 
+    },
+    {
+        "id": 5,   
+        "nombre": "Mariev:Boutique de Pastas", 
+        "inicio": "2017",
+        "fin": "Presente",
+        "Localidad": "Bell Ville, Córdoba, Argentina.",
+        "puesto": "Ayudante de Cocina.",
+        "tag1": "Chef",
+        "tag2": "Administración general",
+        "tag3": "Manejo de las Redes Sociales",
+        "tag4": "Atención al cliente",
+        "img": "assets/img/marievlogo.JPG"   
+    }
+],
+
+"porcentajes": [
+    {
+        "id": 6,
+        "titulo": "HTML5",
+        "progreso": "80"
+    },
+    {
+        "id": 7,
+        "titulo": "CSS",
+        "progreso": "70"
+    },
+    {
+        "id": 8,
+        "titulo": "JavaScript",
+        "progreso": "40" 
+    },
+    {
+        "id": 9,
+        "titulo": "BootStrap",
+        "progreso": "60"
+    },
+    {
+        "Id": 10,
+        "titulo":"Angular",
+        "progreso": "50"
+    },
+    {
+        "Id": 11,
+        "titulo": "Photoshop",
+        "progreso": "30"
+    }
+],
+
+"softuno": [
+    {
+        "titulo": "Creatividad",
+        "imagen": "fa-regular fa-lightbulb",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam accusantium hic ipsa eum aliquid earum quae laboriosam temporibus."
+    },
+    {
+        "titulo": "Comunicación",
+        "imagen": "fa-solid fa-user-group",
+        "descripcion": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "titulo": "Trabajo en Equipo",
+        "imagen": "fa-solid fa-people-group",
+        "descripcion": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+        "titulo": "Gestion del Tiempo",
+        "imagen": "fa-regular fa-clock",
+        "descripcion": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque"
+    }
+],
+"softdos": [
+    {
+        "titulo": "Pensamiento Crítico",
+        "imagen": "fa-solid fa-brain",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam accusantium hic ipsa eum aliquid earum quae laboriosam temporibus."
+
+    },
+    {
+    "titulo": "Responsabilidad",
+    "imagen": "fa-solid fa-suitcase",
+    "descripcion": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+     },
+     {
+    "titulo": "Capacidad Resolutiva",
+    "imagen": "fa-solid fa-code-branch",
+    "descripcion": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+     },
+     {
+    "titulo": "Empatía",
+    "imagen": "fa-regular fa-face-smile",
+    "descripcion": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque"
+     }
+
+],
+
+"trabajos": [
+    {
+        "imagen": "assets/img/pexels-elvis-2528118.jpg",
+        "pagina": "Pagina 1",
+        "categoria": "Diseño Web",
+        "fecha": "2022",
+        "url": "portfolio-details.html"
+    },
+    {
+        "imagen": "assets/img/pexels-karolina-grabowska-5632379.jpg",
+        "pagina": "Pagina 2",
+        "categoria": "Diseño Web",
+        "fecha": "2022",
+        "url": "portfolio-details.html"
+    },
+    {
+        "imagen": "assets/img/pexels-nataliya-vaitkevich-5122139.jpg",
+        "pagina": "Argentina Programa",
+        "categoria": "Diseño Web",
+        "fecha": "2022-2023",
+        "url": "portfolio-details.html"
+    }
+]
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+}

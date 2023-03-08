@@ -1,0 +1,25 @@
+<section id="skills" class="skills section-bg">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Hard Skills</h2> <app-newskill></app-newskill>
+        <p>Competencias adquiridas a través del estudio o la experiencia que permiten realizar una labor o profesión</p> 
+        <br>
+      </div>
+    <div class="row">
+        <div *ngFor="let skills of porcentaje" class="col-md-3">
+            <h5 class="progressbar-title">{{skills.titulo}}</h5>
+            <td routerLinkActive="active">
+              <i class="fa-solid fa-pencil" type="button" *ngIf="isLogged" routerLink="/edithardskills/{{skills.id}}"></i> <br> <i class="fa-regular fa-trash-can"  type="button" *ngIf="isLogged" (click)="delete(skills.id)"></i></td>
+            <div class="progress-circle progress-{{skills.progreso}}"><span>{{skills.progreso}}</span>
+            </div>  
+            <br>
+          <br> 
+        </div>
+    </div>
+</div>
+</section>
+<!-- End Skills Section -->
+<br>
+<br>
+<br>

@@ -1,0 +1,39 @@
+<div class="container" *ngIf="trabajos">
+  <div class="row">
+        <form  (ngSubmit)="onUpdate()" novalidate #f="ngForm" [formGroup]="form">
+          <div class="mb-3">
+            <div class="form group">
+              <label for="imagen" class="form-label">Url de la Imagen</label>
+              <input class="form-control form-control-sm" id="imagen" type="text" formControlName="imagen" [(ngModel)]="trabajos.imagen">
+          </div>
+        </div>
+            <div class="mb-3">
+              <div class="form group">
+              <label for="pagina" class="form-label">Nombre de la Pagina</label>
+              <input class="form-control form-control-sm" id="pagina" formControlName="pagina" type="text" [(ngModel)]="trabajos.pagina">
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="form group">
+            <label for="categoria" class="form-label">Categoria</label>
+            <input class="form-control form-control-sm" id="categoria" formControlName="categoria" type="text" [(ngModel)]="trabajos.categoria">
+          </div>
+        </div>
+        <div class="mb-3">
+          <div class="form group">
+          <label for="fecha" class="form-label">Fecha de creación</label>
+          <input class="form-control form-control-sm" id="fecha" formControlName="fecha" type="text" [(ngModel)]="trabajos.fecha">
+        </div>
+      </div>
+      <div class="mb-3">
+        <div class="form group">
+        <label for="url" class="form-label">Url de la Página</label>
+        <input class="form-control form-control-sm" id="url" formControlName="url" type="text" [(ngModel)]="trabajos.url">
+      </div>
+    </div>
+        <button type="button" class="btn btn-secondary" (click)="volver($event)" >Cerrar</button>
+        <button type="submit" class="btn btn-primary" (click)="onEnviar($event)" >Actualizar</button>
+    </form>
+  </div>
+  </div>
+    

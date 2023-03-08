@@ -1,0 +1,8 @@
+   <div class="d-flex mb-3">
+        <a href='https://instagram.com/Evepenfold' target="_blank"> <i class="fa-brands fa-instagram fa-xl p-2" type="button"></i></a>
+       <a href="https://linkedin.com/in/evelyn-penfold" target="_blank"> <i class="fa-brands fa-linkedin-in fa-xl p-2" type="button"></i></a>
+       <a href="https://github.com/Eveprgrama" target="_blank"><i class="fa-brands fa-github fa-xl p-2" type="button"></i></a>
+        <i class="fa-solid fa-user fa-xl p-2" type="button" (click)="login()" *ngIf="!isLogged" >
+        </i>
+        <i class="fa-solid fa-arrow-right-from-bracket fa-xl p-2" (click)="onLogOut()" *ngIf="isLogged"></i>
+   </div>

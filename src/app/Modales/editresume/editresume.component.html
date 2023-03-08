@@ -1,0 +1,44 @@
+<div class="container" *ngIf="expLab">
+  <div class="row">
+        <form  (ngSubmit)="onUpdate()" novalidate #f="ngForm" [formGroup]="form">
+          <div class="mb-3">
+            <div class="form group">
+              <label for="img" class="form-label">Logo</label>
+              <input class="form-control form-control-sm" id="img" type="text" formControlName="img" [(ngModel)]="expLab.img">
+          </div>
+        </div>
+            <div class="mb-3">
+              <div class="form group">
+              <label for="nombreE" class="form-label">Nombre del lugar</label>
+              <input class="form-control form-control-sm" id="nombreE" formControlName="nombreE" type="text" [(ngModel)]="expLab.nombreE">
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="form group">
+              <label for="inicio" class="form-label">Localidad</label>
+              <input class="form-control form-control-sm" id="localidad" formControlName="localidad" type="text" [(ngModel)]="expLab.localidad">
+            </div>
+          </div>
+            <div class="mb-3">
+              <div class="form group">
+                <label for="inicio" class="form-label">Año de inicio</label>
+                <input class="form-control form-control-sm" id="inicio" formControlName="inicio" type="text" [(ngModel)]="expLab.inicio">
+              </div>
+            </div>
+              <div class="mb-3">
+                <div class="form group">
+                <label for="fin" class="form-label">Año de fin</label>
+                <input class="form-control form-control-sm" id="fin" formControlName="fin" type="text" [(ngModel)]="expLab.fin">
+              </div>
+            </div>
+                <div class="mb-3">
+                  <div class="form group">
+                  <label for="descripcionE" class="form-label">Descripción</label>
+                  <textarea class="form-control" id="descripcionE" formControlName="descripcionE" rows="3" [(ngModel)]="expLab.descripcionE"></textarea>
+                </div>
+              </div>    
+        <button type="button" class="btn btn-secondary" (click)="volver($event)" >Cerrar</button>
+        <button type="submit" class="btn btn-primary" (click)="onEnviar($event)" >Actualizar</button>
+    </form>
+  </div>
+  </div>
