@@ -27,12 +27,12 @@
                 <div class="col-sm-8">
                   <h2 class="w-title">{{trabajo.pagina}}</h2>
                   <div class="w-more">
-                    <span class="w-ctegory">{{trabajo.categoria}}</span> / <span class="w-date">{{trabajo.fecha}}</span>
+                    <span class="w-ctegory">{{trabajo.categoria}} </span> / <span class="w-date">{{trabajo.fecha}}</span> / <a [href]="trabajo.url">Url</a>
                   </div>
                 </div>
                 <div class="col-sm-4">
                   <div class="w-like">
-                    <a [href]="trabajo.url"> <span class="bi bi-plus-circle"></span></a>
+                    <span class="bi bi-plus-circle"></span>
                   </div>
                   <td routerLinkActive="active">
                     <i class="fa-solid fa-pencil" type="button" *ngIf="isLogged" routerLink="/edittrabajos/{{trabajo.id}}"></i> <br> <i class="fa-regular fa-trash-can"  type="button" *ngIf="isLogged" (click)="delete(trabajo.id)"></i></td>
